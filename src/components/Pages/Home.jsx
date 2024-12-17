@@ -1,13 +1,15 @@
 import React from 'react';
 import bgImage from '../../assets/Images/1.jpg';
+
 const Home = () => {
   return (
     <div className="relative h-screen bg-black text-white">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-60"
+        className="absolute inset-0 bg-cover opacity-20"
         style={{
           backgroundImage: `url(${bgImage})`,
+          backgroundPosition: 'top center', // Focus on the face
         }}
       ></div>
 

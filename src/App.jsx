@@ -9,50 +9,55 @@ import Portfolio from './components/Pages/Portfolio'
 import Testimonials from './components/Pages/Testimonials'
 import Resume from './components/Pages/Resume'
 import Services from './components/Pages/Services'
-import { TiThMenu } from "react-icons/ti";
-import { IoClose } from 'react-icons/io5'
-import { FaWindowClose } from 'react-icons/fa'
 
 const App = () => {
   const [isOpneSidebar, setIsOpneSidebar] = useState(false)
-  const toggleSide = () => {
+  const handleOpenSidebar = () => {
     setIsOpneSidebar(!isOpneSidebar)
   }
+
   return (
     <Router>
-      <div className='min-h-screen flex relative'>
+      <div className="min-h-screen flex relative">
+        {/* Hamburger Button */}
         {!isOpneSidebar ? (
-          <button className='absolute z-50 text-white right-2 top-2' onClick={toggleSide}>
-            <TiThMenu className='w-8 h-8' />
+          <button
+            className="absolute md:hidden top-3 right-3 z-50 text-white text-4xl font-bold"
+            onClick={handleOpenSidebar}
+          >
+            X
           </button>
         ) : (
-          <button className='absolute z-50 text-white left-36 top-2' onClick={toggleSide}>
-            <FaWindowClose className='w-8 h-8 font-bold' />
+          <button
+            className="absolute md:hidden top-3 right-3 z-50 text-white text-4xl font-bold"
+            onClick={handleOpenSidebar}
+          >
+           &#9776;
           </button>
-
         )}
+
         {/* Sidebar */}
         <div
-          className={`bg-black text-white p-5 fixed h-full z-40 top-0 transition-transform duration-300 ${isOpneSidebar ? 'translate-x-0' : '-translate-x-full'
-            }`}
+          className={`${
+            !isOpneSidebar ? 'translate-x-0' : '-translate-x-full'
+          } bg-black h-screen w-[70%] md:w-[20%] p-5 fixed md:relative transform transition-transform duration-300 z-40`}
         >
           <Sidebar />
         </div>
 
-
-        <div className='bg-gray-500  text-white w-[100%] md:w-[80%] ml-auto'>
+        {/* Main Content */}
+        <div className="bg-[#242424] text-white w-full md:w-[80%] ">
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/resume' element={<Resume />} />
-            <Route path='/services' element={<Services />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/testimonials' element={<Testimonials />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-
       </div>
     </Router>
   )
