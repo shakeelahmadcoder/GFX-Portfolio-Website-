@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiHome, FiUser, FiFileText, FiBriefcase, FiGrid, FiMessageCircle, FiBook, FiMail } from 'react-icons/fi';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-
+import LogoImage from './../assets/Images/logo.png';
 const Sidebar = () => {
   return (
     <div className="flex flex-col h-full bg-black text-white p-5 overflow-y-auto ">
       {/* Header */}
-      <h1 className="text-2xl font-bold mb-20">
-        <span className="text-yellow-300">G</span>smith
+      <h1 className="text-xl font-bold mb-20">
+       <img src={LogoImage} alt="" className=''/>
       </h1>
 
       {/* Navigation */}

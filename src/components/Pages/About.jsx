@@ -1,6 +1,6 @@
 import React from "react";
 import { FaBriefcase, FaCheckCircle, FaPalette, FaCamera } from "react-icons/fa";
-import bgImage from '../../assets/Images/1.jpg';
+import bgImage from '../../assets/Images/12.jpg';
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
         {/* Image Section */}
         <div className="relative mx-auto lg:mx-0">
-          <div className="w-60 h-60 lg:w-72 lg:h-72 bg-yellow-500 absolute top-5 left-5 -z-10"></div>
+          <div className="w-60 h-60 lg:w-52 lg:h-52 bg-yellow-500 absolute top-5 left-5 -z-10"></div>
           <img
             src={bgImage}
             alt="Profile"
@@ -25,7 +25,7 @@ const About = () => {
 
         {/* Text Section */}
         <div>
-          <h2 className="text-yellow-400 text-3xl lg:text-4xl font-bold mb-2">John Doe</h2>
+          <h2 className="text-yellow-400 text-3xl lg:text-4xl font-bold mb-2">Ahtisham </h2>
           <h3 className="text-lg text-gray-300 font-semibold mb-4">Graphic Designer</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             With over 5 years of experience in graphic design, I specialize in creating visually compelling designs that align with client goals. I enjoy bringing concepts to life and making them stand out in a competitive market.
