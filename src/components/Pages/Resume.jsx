@@ -39,8 +39,8 @@ const Resume = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi atque error officiis. Perspiciatis officiis doloremque ut corporis dicta harum!
       </p>
 
-      {/* Education & Experience */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+      {/* Education & Experience */} 
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 place-items-center ">
         {/* Education */}
         <div>
           <h2 className="text-yellow-400 text-3xl font-semibold mb-6 flex items-center gap-2">
@@ -75,7 +75,7 @@ const Resume = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 place-items-center ">
         {/* Programming Skills */}
         <div>
           <h2 className="text-yellow-400 text-3xl font-semibold mb-6">Programming Skills</h2>
