@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import Image1 from '../../assets/Images/11.jpg';
-import Image2 from '../../assets/Images/2.jpg';
-import Image3 from '../../assets/Images/3.jpg';
-import Image4 from '../../assets/Images/4.jpg';
-import Image5 from '../../assets/Images/5.jpg';
-import Image6 from '../../assets/Images/6.jpg';
+import Image1 from "../../assets/Images/11.jpg";
+import Image2 from "../../assets/Images/2.jpg";
+import Image3 from "../../assets/Images/3.jpg";
+import Image4 from "../../assets/Images/4.jpg";
+import Image5 from "../../assets/Images/5.jpg";
 
 const portfolioData = [
-  { id: 1, title: "Web Design", category: "Web Design", image: Image1 },
-  { id: 2, title: "Graphic Poster", category: "Graphic Design", image: Image2 },
-  { id: 3, title: "Mobile App", category: "Mobile App", image: Image3 },
-  { id: 4, title: "Graphic Logo", category: "Graphic Design", image: Image4 },
-  { id: 5, title: "UI/UX Design", category: "Web Design", image: Image5 },
-  { id: 6, title: "App Poster", category: "Graphic Design", image: Image6 },
+  { id: 1, title: "Poster Design", category: "Poster Design", image: Image1 },
+  { id: 2, title: "Thumbnail Design", category: "Thumbnail Design", image: Image2 },
+  { id: 3, title: "Logo Design", category: "Logo Design", image: Image3 },
+  { id: 4, title: "Flyer Design", category: "Flyer Design", image: Image4 },
+  { id: 5, title: "Social Media Design", category: "Social Media Design", image: Image5 },
 ];
 
 const Portfolio = () => {
@@ -29,22 +27,26 @@ const Portfolio = () => {
       {/* Heading */}
       <h1 className="text-4xl font-bold mb-2">Portfolio</h1>
       <p className="text-gray-400 text-center max-w-2xl mb-8">
-        Showcasing my creative work in web design, graphic design, and mobile applications.
+        Showcasing my creative work in Graphic Design, including posters, thumbnails, logos, and more.
       </p>
 
       {/* Filters */}
-      <div className="flex space-x-6 mb-8">
-        {["All Projects", "Web Design", "Mobile App", "Graphic Design"].map((category) => (
-          <button
-            key={category}
-            onClick={() => setFilter(category)}
-            className={`text-sm uppercase font-medium px-4 py-2 ${
-              filter === category ? "text-yellow-500 border-b-2 border-yellow-500" : "text-gray-300"
-            } hover:text-yellow-500`}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="flex gap-2 mb-8">
+        {["All Projects", "Poster Design", "Thumbnail Design", "Logo Design", "Flyer Design", "Social Media Design"].map(
+          (category) => (
+            <button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={`text-sm sm:text-base md:text-lg uppercase font-medium px-4 py-2 ${
+                filter === category
+                  ? "text-yellow-500 border-b-2 border-yellow-500"
+                  : "text-gray-300"
+              } hover:text-yellow-500`}
+            >
+              {category}
+            </button>
+          )
+        )}
       </div>
 
       {/* Portfolio Items */}

@@ -18,7 +18,7 @@ const Home = () => {
         <div>
           <p className="text-lg md:text-2xl mb-4 font-light">Hello, I'm</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Randy Smith</h1>
-          <p className="text-xl md:text-3xl font-light">I am a UI/UX Designer</p>
+          <p className="text-xl md:text-3xl font-light">I am a Graphic Designer</p>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Pages/Home'
 import About from './components/Pages/About'
 import Contact from './components/Pages/Contact'
-import Blog from './components/Pages/Blog'
+// import Blog from './components/Pages/Blog'
 import Portfolio from './components/Pages/Portfolio'
 import Testimonials from './components/Pages/Testimonials'
 import Resume from './components/Pages/Resume'
@@ -22,7 +22,7 @@ const App = () => {
         {/* Hamburger Button */}
         {!isOpneSidebar ? (
           <button
-            className="absolute md:hidden top-3 right-3 z-50 text-white text-4xl font-bold"
+            className="absolute md:hidden top-3 left-60 z-50 text-white text-4xl font-bold"
             onClick={handleOpenSidebar}
           >
             X
@@ -54,7 +54,6 @@ const App = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

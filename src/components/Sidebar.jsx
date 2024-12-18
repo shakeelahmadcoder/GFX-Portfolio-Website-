@@ -38,10 +38,7 @@ const Sidebar = () => {
             <FiMessageCircle />
             <Link  to="/testimonials">Testimonials</Link>
           </li>
-          <li className="flex items-center gap-2">
-            <FiBook />
-            <Link  to="/blog">Blog</Link>
-          </li>
+         
           <li className="flex items-center gap-2">
             <FiMail />
             <Link  to="/contact">Contact</Link>
