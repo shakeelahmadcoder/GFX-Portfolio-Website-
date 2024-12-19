@@ -41,7 +41,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {data.contactInfo.map((item, index) => (
             <div
               key={index}
@@ -54,7 +54,7 @@ const Contact = () => {
               ))}
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Form Section */}
         <div className="bg-transparent border-2 border-gray-500 p-8 rounded-lg shadow-lg">

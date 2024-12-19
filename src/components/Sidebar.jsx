@@ -8,7 +8,7 @@ const Sidebar = () => {
     <div className="flex flex-col h-full bg-black text-white p-5 overflow-y-auto ">
       {/* Header */}
       <h1 className="text-xl font-bold mb-20">
-       <img src={LogoImage} alt="" className=''/>
+       <img src={LogoImage} alt="" className=' w-32'/>
       </h1>
 
       {/* Navigation */}

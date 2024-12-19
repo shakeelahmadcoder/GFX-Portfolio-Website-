@@ -1,14 +1,17 @@
 import React from "react";
 import { FaBriefcase, FaCheckCircle, FaPalette, FaCamera } from "react-icons/fa";
-import bgImage from '../../assets/Images/12.jpg';
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import bgImage from "../../assets/Images/12.jpg";
 
 const About = () => {
+  const navigate = useNavigate(); // Initialize navigate
+
   return (
     <div className="h-screen overflow-auto text-white py-12 px-8 lg:px-16">
       {/* About Header */}
       <h1 className="text-4xl lg:text-5xl font-bold text-center mb-6">About Me</h1>
       <p className="text-gray-400 text-center mb-10 px-6 lg:px-32">
-        I am a passionate and dedicated graphic designer with a keen eye for detail and a creative approach to problem-solving. 
+        I am a passionate and dedicated graphic designer with a keen eye for detail and a creative approach to problem-solving.
       </p>
 
       {/* About Section */}
@@ -25,7 +28,7 @@ const About = () => {
 
         {/* Text Section */}
         <div>
-          <h2 className="text-yellow-400 text-3xl lg:text-4xl font-bold mb-2">Ahtisham </h2>
+          <h2 className="text-yellow-400 text-3xl lg:text-4xl font-bold mb-2">Muhammad Ahtisham</h2>
           <h3 className="text-lg text-gray-300 font-semibold mb-4">Graphic Designer</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             With over 5 years of experience in graphic design, I specialize in creating visually compelling designs that align with client goals. I enjoy bringing concepts to life and making them stand out in a competitive market.
@@ -34,7 +37,10 @@ const About = () => {
             <button className="bg-yellow-500 text-gray-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-600 transition duration-300">
               Download Portfolio
             </button>
-            <button className="border border-yellow-500 px-6 py-2 rounded-full font-bold text-yellow-400 hover:bg-yellow-500 hover:text-gray-900 transition duration-300">
+            <button
+              className="border border-yellow-500 px-6 py-2 rounded-full font-bold text-yellow-400 hover:bg-yellow-500 hover:text-gray-900 transition duration-300"
+              onClick={() => navigate("/contact")} // Navigate to the contact page
+            >
               Hire Me
             </button>
           </div>
