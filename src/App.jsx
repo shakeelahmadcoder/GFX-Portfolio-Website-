@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
-// import Blog from './components/Pages/Blog';
 import Portfolio from './components/Pages/Portfolio';
 import Testimonials from './components/Pages/Testimonials';
 import Resume from './components/Pages/Resume';

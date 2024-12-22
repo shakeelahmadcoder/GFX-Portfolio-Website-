@@ -16,6 +16,9 @@ import Logo1 from "../../assets/Images/Logo1.jpg";
 import Logo2 from "../../assets/Images/Logo2.jpg";
 
 const portfolioData = [
+  // Logo Design
+  { id: 14, title: "Logo Design 1", category: "Logo Design", image: Logo1 },
+  { id: 15, title: "Logo Design 2", category: "Logo Design", image: Logo2 },
   // Thumbnail Design
   { id: 1, title: "Thumbnail Design 1", category: "Thumbnail Design", image: Thumbnail1 },
   { id: 2, title: "Thumbnail Design 2", category: "Thumbnail Design", image: Thumbnail2 },
@@ -33,9 +36,7 @@ const portfolioData = [
   { id: 12, title: "Poster Design 5", category: "Poster Design", image: Poster5 },
   { id: 13, title: "Poster Design 6", category: "Poster Design", image: Poster6 },
 
-  // Logo Design
-  { id: 14, title: "Logo Design 1", category: "Logo Design", image: Logo1 },
-  { id: 15, title: "Logo Design 2", category: "Logo Design", image: Logo2 },
+  
 ];
 
 const Portfolio = () => {
@@ -79,7 +80,7 @@ const Portfolio = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-60 object-cover rounded-lg"
+              className="w-full h-full object-cover "
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
