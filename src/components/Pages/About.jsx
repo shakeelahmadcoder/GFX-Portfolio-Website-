@@ -7,7 +7,7 @@ const About = () => {
   const navigate = useNavigate(); // Initialize navigate
 
   return (
-    <div className="h-screen overflow-auto text-white py-12 px-8 lg:px-16">
+    <div className="h-screen overflow-auto text-white py-3 px-8 lg:px-16">
       {/* About Header */}
       <h1 className="text-4xl lg:text-5xl font-bold text-center mb-6">About Me</h1>
       <p className="text-gray-400 text-center mb-10 px-6 lg:px-32">

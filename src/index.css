@@ -31,3 +31,42 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background-color: #999; /* Active state for the thumb */
 }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-backgroundMove {
+  background-size: 200% 200%;
+  animation: backgroundMove 8s infinite linear;
+}
+
