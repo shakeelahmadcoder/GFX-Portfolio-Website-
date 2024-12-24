@@ -41,42 +41,46 @@ import Product9 from "../../assets/Images/PortfolioImages/Product9.jpg";
 import Product10 from "../../assets/Images/PortfolioImages/Product10.jpg";
 import Product11 from "../../assets/Images/PortfolioImages/Product11.jpg";
 import Product12 from "../../assets/Images/PortfolioImages/Product12.jpg";
+import Standay1 from "../../assets/Images/PortfolioImages/Standay1.jpg";
+import Standay2 from "../../assets/Images/PortfolioImages/Standay2.jpg";
+import Standay3 from "../../assets/Images/PortfolioImages/Standay3.jpg";
+import Standay4 from "../../assets/Images/PortfolioImages/Standay4.jpg";
+import Standay5 from "../../assets/Images/PortfolioImages/Standay5.jpg";
+import Standay6 from "../../assets/Images/PortfolioImages/Standay6.jpg";
+import Standay7 from "../../assets/Images/PortfolioImages/Standay7.jpg";
+import Standay8 from "../../assets/Images/PortfolioImages/Standay8.jpg";
+import Standay9 from "../../assets/Images/PortfolioImages/Standay9.jpg";
+import Standay10 from "../../assets/Images/PortfolioImages/Standay10.jpg";
+import Standay11 from "../../assets/Images/PortfolioImages/Standay11.jpg";
+import Standay12 from "../../assets/Images/PortfolioImages/Standay12.jpg";
+import Standay13 from "../../assets/Images/PortfolioImages/Standay13.jpg";
+import Standay14 from "../../assets/Images/PortfolioImages/Standay14.jpg";
 
 const portfolioData = [
-   // YouTube Thumbnails
+  // YouTube Thumbnails
   { id: 24, title: "YouTube Thumbnail 1", category: "YT Thumbnail", image: Ytthumbnail1 },
   { id: 25, title: "YouTube Thumbnail 2", category: "YT Thumbnail", image: Ytthumbnail2 },
   { id: 26, title: "YouTube Thumbnail 3", category: "YT Thumbnail", image: Ytthumbnail3 },
-  // { id: 27, title: "YouTube Thumbnail 4", category: "YT Thumbnail", image: Ytthumbnail4 },
   { id: 28, title: "YouTube Thumbnail 5", category: "YT Thumbnail", image: Ytthumbnail5 },
   { id: 29, title: "YouTube Thumbnail 6", category: "YT Thumbnail", image: Ytthumbnail6 },
   { id: 30, title: "YouTube Thumbnail 7", category: "YT Thumbnail", image: Ytthumbnail7 },
+
+  // Standay Design
+  { id: 43, title: "Standay Design 1", category: "Standay Design", image: Standay1 },
+  { id: 44, title: "Standay Design 2", category: "Standay Design", image: Standay2 },
+  { id: 45, title: "Standay Design 3", category: "Standay Design", image: Standay3 },
+  { id: 46, title: "Standay Design 4", category: "Standay Design", image: Standay4 },
+  { id: 47, title: "Standay Design 5", category: "Standay Design", image: Standay5 },
+  { id: 48, title: "Standay Design 6", category: "Standay Design", image: Standay6 },
+  { id: 49, title: "Standay Design 7", category: "Standay Design", image: Standay7 },
+  { id: 50, title: "Standay Design 8", category: "Standay Design", image: Standay8 },
+
   // Fiverr Thumbnails
   { id: 1, title: "Fiverr Thumbnail 1", category: "Fiverr Thumbnail", image: Fiverr1 },
   { id: 2, title: "Fiverr Thumbnail 2", category: "Fiverr Thumbnail", image: Fiverr2 },
   { id: 3, title: "Fiverr Thumbnail 3", category: "Fiverr Thumbnail", image: Fiverr3 },
   { id: 4, title: "Fiverr Thumbnail 4", category: "Fiverr Thumbnail", image: Fiverr4 },
   { id: 5, title: "Fiverr Thumbnail 5", category: "Fiverr Thumbnail", image: Fiverr5 },
-  { id: 6, title: "Fiverr Thumbnail 6", category: "Fiverr Thumbnail", image: Fiverr6 },
-  { id: 7, title: "Fiverr Thumbnail 7", category: "Fiverr Thumbnail", image: Fiverr7 },
-  { id: 8, title: "Fiverr Thumbnail 8", category: "Fiverr Thumbnail", image: Fiverr8 },
-  { id: 9, title: "Fiverr Thumbnail 9", category: "Fiverr Thumbnail", image: Fiverr9 },
-  { id: 10, title: "Fiverr Thumbnail 10", category: "Fiverr Thumbnail", image: Fiverr10 },
-  { id: 11, title: "Fiverr Thumbnail 11", category: "Fiverr Thumbnail", image: Fiverr11 },
-  { id: 12, title: "Fiverr Thumbnail 12", category: "Fiverr Thumbnail", image: Fiverr12 },
-  { id: 13, title: "Fiverr Thumbnail 13", category: "Fiverr Thumbnail", image: Fiverr13 },
-  { id: 14, title: "Fiverr Thumbnail 14", category: "Fiverr Thumbnail", image: Fiverr14 },
-  { id: 15, title: "Fiverr Thumbnail 15", category: "Fiverr Thumbnail", image: Fiverr15 },
-  { id: 16, title: "Fiverr Thumbnail 16", category: "Fiverr Thumbnail", image: Fiverr16 },
-  { id: 17, title: "Fiverr Thumbnail 17", category: "Fiverr Thumbnail", image: Fiverr17 },
-  { id: 18, title: "Fiverr Thumbnail 18", category: "Fiverr Thumbnail", image: Fiverr18 },
-  { id: 19, title: "Fiverr Thumbnail 19", category: "Fiverr Thumbnail", image: Fiverr19 },
-  { id: 20, title: "Fiverr Thumbnail 20", category: "Fiverr Thumbnail", image: Fiverr20 },
-  { id: 21, title: "Fiverr Thumbnail 21", category: "Fiverr Thumbnail", image: Fiverr21 },
-  // { id: 22, title: "Fiverr Thumbnail 22", category: "Fiverr Thumbnail", image: Fiverr22 },
-  { id: 23, title: "Fiverr Thumbnail 23", category: "Fiverr Thumbnail", image: Fiverr23 },
-
- 
 
   // Product Designs
   { id: 31, title: "Product Design 1", category: "Product Design", image: Product1 },
@@ -84,14 +88,8 @@ const portfolioData = [
   { id: 33, title: "Product Design 3", category: "Product Design", image: Product3 },
   { id: 34, title: "Product Design 4", category: "Product Design", image: Product4 },
   { id: 35, title: "Product Design 5", category: "Product Design", image: Product5 },
-  { id: 36, title: "Product Design 6", category: "Product Design", image: Product6 },
-  { id: 37, title: "Product Design 7", category: "Product Design", image: Product7 },
-  { id: 38, title: "Product Design 8", category: "Product Design", image: Product8 },
-  { id: 39, title: "Product Design 9", category: "Product Design", image: Product9 },
-  { id: 40, title: "Product Design 10", category: "Product Design", image: Product10 },
-  { id: 41, title: "Product Design 11", category: "Product Design", image: Product11 },
-  { id: 42, title: "Product Design 12", category: "Product Design", image: Product12 },
 ];
+
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("All Projects");
@@ -112,11 +110,11 @@ const Portfolio = () => {
 
       {/* Filters */}
       <div className="flex gap-2 mb-8">
-        {["All Projects", "Fiverr Thumbnail", "YT Thumbnail", "Product Design"].map((category) => (
+        {["All Projects", "Fiverr Thumbnail", "YT Thumbnail", "Standay Design", "Product Design"].map((category) => (
           <button
             key={category}
             onClick={() => setFilter(category)}
-            className={`text-sm sm:text-base md:text-lg uppercase font-medium px-4 py-2 ${filter === category ? "text-yellow-500 border-b-2 border-yellow-500" : "text-gray-300"} hover:text-yellow-500`}
+            className={`text-[8px] md:text-lg uppercase font-medium px-3 py-2 ${filter === category ? "text-yellow-500 border-b-2 border-yellow-500" : "text-gray-300"} hover:text-yellow-500`}
           >
             {category}
           </button>

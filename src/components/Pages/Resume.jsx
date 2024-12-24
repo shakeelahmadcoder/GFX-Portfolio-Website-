@@ -27,7 +27,7 @@ const resumeData = {
 
 const Resume = () => {
   return (
-    <div className="h-screen text-white py-16 px-12 lg:px-24 overflow-y-auto">
+    <div className="h-screen text-white py-16 px-12 lg:px-24 overflow-y-auto text-center">
       {/* Resume Header */}
       <h1 className="text-5xl font-bold text-center mb-8">Resume</h1>
       <p className="text-gray-400 text-center mb-10 px-6 md:px-16 lg:px-32">

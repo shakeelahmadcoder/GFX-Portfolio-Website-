@@ -25,7 +25,7 @@ const Home = () => {
           Hello, I'm
         </h1>
         <h2
-          className="text-2xl md:text-4xl lg:text-7xl font-extrabold tracking-widest mb-4"
+          className="text-2xl md:text-4xl lg:text-7xl font-extrabold tracking-widest "
           style={{ animation: "fadeIn 1.5s ease-in-out" }}
         >
           Muhammad Ahtisham
@@ -39,7 +39,7 @@ const Home = () => {
           bringing your ideas to life.
         </p>
         <div
-          className="mt-8 flex flex-col md:flex-row gap-4"
+          className="mt-4 flex  gap-4"
           style={{ animation: "fadeIn 2s ease-in-out" }}
         >
           <button
