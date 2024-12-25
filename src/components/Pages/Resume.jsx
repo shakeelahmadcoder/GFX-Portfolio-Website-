@@ -15,18 +15,29 @@ const resumeData = {
   },
   education: [
     { degree: "B.S.C.C", year: "2020", institute: "Virtual University", status: "Continue" },
-    { degree: "I.C.S", year: "2020", institute: "B.I.S.E Sargodha", marks: 765 },
-    { degree: "Matric", year: "2018", institute: "B.I.S.E Sargodha", marks: 931 },
+    { degree: "I.C.S", year: "2020", institute: "B.I.S.E Sargodha" },
+    { degree: "Matric", year: "2018", institute: "B.I.S.E Sargodha" },
   ],
   experience: [
     { title: "Computer Operator & Graphic Designer", organization: "Career Group of Colleges", year: "1 Year" },
-    { title: "Trainee Machine Operator", organization: "Masood Textile Mills", year: "3 Months" },
-    { title: "Social Media Marketer & Graphic Designer", organization: "Insaf Estate Builders", year: "1 Year" },
+    {
+      title: "Trainee Machine Operator",
+      organization: "Masood Textile Mills",
+      year: "3 Months",
+    },
+    {
+      title: "Social Media Manager & Graphic Designer",
+      organization: "Insaf Estate Builders",
+      year: "1 Year",
+      description:
+        "Managed social media campaigns, content creation, and audience engagement while designing promotional graphics to boost brand presence.",
+    },
   ],
   skills: [
     "Adobe Photoshop",
     "Adobe Illustrator",
     "CorelDraw",
+    "Social Media Management",
     "MS Office",
     "Typing Speed: 40WPM",
   ],
@@ -57,9 +68,7 @@ const Resume = () => {
             <li key={idx} className="mb-4">
               <h3 className="font-semibold">{edu.degree}</h3>
               <p className="text-gray-400">{edu.institute}</p>
-              <span className="text-sm text-gray-500">
-                {edu.year} {edu.marks ? `| Marks: ${edu.marks}` : ""}
-              </span>
+              <span className="text-sm text-gray-500">{edu.year}</span>
             </li>
           ))}
         </ul>
@@ -74,6 +83,7 @@ const Resume = () => {
               <h3 className="font-semibold">{exp.title}</h3>
               <p className="text-gray-400">{exp.organization}</p>
               <span className="text-sm text-gray-500">{exp.year}</span>
+              {exp.description && <p className="text-gray-400 mt-2">{exp.description}</p>}
             </li>
           ))}
         </ul>
