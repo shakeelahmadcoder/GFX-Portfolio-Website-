@@ -7,7 +7,7 @@ import { TbBrandAdobeIllustrator } from "react-icons/tb";
 const resumeData = {
   personalInfo: {
     name: "Muhammad Ahtisham",
-    email: "mahtisham909@gmail.com",
+    email: "shamiahtisham909@gmail.com",
     phone: "+92305-7256494, +92321-9350989",
     address: "Chak No 11/50MB, Jauharabad, Pakistan",
     objective:
@@ -46,27 +46,33 @@ const resumeData = {
 
 const Resume = () => {
   return (
-    <div className="h-screen text-gray-200 py-16 px-8 lg:px-24 overflow-y-auto">
+    <div className="h-screen text-gray-200 py-16 px-8 lg:px-24 overflow-y-auto bg-gradient-to-r">
       {/* Header */}
-      <h1 className="text-4xl font-bold text-center text-yellow-400 mb-4">
-        {resumeData.personalInfo.name}
-      </h1>
-      <p className="text-center text-gray-400 mb-8">{resumeData.personalInfo.email}</p>
-      <p className="text-center text-gray-400 mb-10">{resumeData.personalInfo.phone}</p>
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-yellow-400 mb-4">{resumeData.personalInfo.name}</h1>
+        <p className="text-xl text-gray-300">{resumeData.personalInfo.email}</p>
+        <p className="text-xl text-gray-300 mb-4">{resumeData.personalInfo.phone}</p>
+      </div>
 
       {/* Career Objective */}
       <div className="mb-12">
-        <h2 className="text-yellow-400 text-2xl font-semibold mb-4">Career Objective</h2>
-        <p className="text-gray-400">{resumeData.personalInfo.objective}</p>
+        <h2 className="text-yellow-400 text-3xl font-semibold mb-4 flex items-center">
+          <FaBriefcase className="mr-2" />
+          Career Objective
+        </h2>
+        <p className="text-gray-300">{resumeData.personalInfo.objective}</p>
       </div>
 
       {/* Education */}
       <div className="mb-12">
-        <h2 className="text-yellow-400 text-2xl font-semibold mb-4">Education</h2>
+        <h2 className="text-yellow-400 text-3xl font-semibold mb-4 flex items-center">
+          <FaGraduationCap className="mr-2" />
+          Education
+        </h2>
         <ul>
           {resumeData.education.map((edu, idx) => (
-            <li key={idx} className="mb-4">
-              <h3 className="font-semibold">{edu.degree}</h3>
+            <li key={idx} className="mb-4 p-4 bg-gray-700 rounded-lg shadow-lg">
+              <h3 className="font-semibold text-xl text-yellow-300">{edu.degree}</h3>
               <p className="text-gray-400">{edu.institute}</p>
               <span className="text-sm text-gray-500">{edu.year}</span>
             </li>
@@ -76,11 +82,14 @@ const Resume = () => {
 
       {/* Experience */}
       <div className="mb-12">
-        <h2 className="text-yellow-400 text-2xl font-semibold mb-4">Experience</h2>
+        <h2 className="text-yellow-400 text-3xl font-semibold mb-4 flex items-center">
+          <FaBriefcase className="mr-2" />
+          Experience
+        </h2>
         <ul>
           {resumeData.experience.map((exp, idx) => (
-            <li key={idx} className="mb-4">
-              <h3 className="font-semibold">{exp.title}</h3>
+            <li key={idx} className="mb-4 p-4 bg-gray-700 rounded-lg shadow-lg">
+              <h3 className="font-semibold text-xl text-yellow-300">{exp.title}</h3>
               <p className="text-gray-400">{exp.organization}</p>
               <span className="text-sm text-gray-500">{exp.year}</span>
               {exp.description && <p className="text-gray-400 mt-2">{exp.description}</p>}
@@ -91,20 +100,26 @@ const Resume = () => {
 
       {/* Skills */}
       <div className="mb-12">
-        <h2 className="text-yellow-400 text-2xl font-semibold mb-4">Skills</h2>
-        <ul className="list-disc pl-4">
+        <h2 className="text-yellow-400 text-3xl font-semibold mb-4 flex items-center">
+          <SiAdobephotoshop className="mr-2" />
+          Skills
+        </h2>
+        <ul className="list-disc pl-6">
           {resumeData.skills.map((skill, idx) => (
-            <li key={idx} className="text-gray-400">{skill}</li>
+            <li key={idx} className="text-gray-300">{skill}</li>
           ))}
         </ul>
       </div>
 
       {/* Languages */}
       <div>
-        <h2 className="text-yellow-400 text-2xl font-semibold mb-4">Languages</h2>
-        <ul className="list-disc pl-4">
+        <h2 className="text-yellow-400 text-3xl font-semibold mb-4 flex items-center">
+          <TbBrandAdobeIllustrator className="mr-2" />
+          Languages
+        </h2>
+        <ul className="list-disc pl-6">
           {resumeData.languages.map((language, idx) => (
-            <li key={idx} className="text-gray-400">{language}</li>
+            <li key={idx} className="text-gray-300">{language}</li>
           ))}
         </ul>
       </div>
