@@ -21,6 +21,24 @@ const Services = () => {
       icon: "📦",
       category: "Product Design",
     },
+    {
+      title: "Billboard Design",
+      description: "Creative billboard designs to attract attention.",
+      icon: "🛣️",
+      category: "Billboard Design",
+    },
+    {
+      title: "Standay Design",
+      description: "Eye-catching standay designs for promotional events.",
+      icon: "🎨",
+      category: "Standay Design",
+    },
+    {
+      title: "Social Media Management",
+      description: "Comprehensive social media management services.",
+      icon: "📱",
+      category: "Social Media Management",
+    },
   ];
 
   return (
