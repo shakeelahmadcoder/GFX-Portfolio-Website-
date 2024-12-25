@@ -22,7 +22,7 @@ import Fiverr20 from "../../assets/Images/PortfolioImages/Fiverr20.jpg";
 import Fiverr21 from "../../assets/Images/PortfolioImages/Fiverr21.jpg";
 // import Fiverr22 from "../../assets/Images/PortfolioImages/Fiverr22.jpg";
 import Fiverr23 from "../../assets/Images/PortfolioImages/Fiverr23.jpg";
-import Ytthumbnail1 from "../../assets/Images/PortfolioImages/ytthumbnail1.jpg";
+// import Ytthumbnail1 from "../../assets/Images/PortfolioImages/ytthumbnail1.jpg";
 import Ytthumbnail2 from "../../assets/Images/PortfolioImages/ytthumbnail2.jpg";
 import Ytthumbnail3 from "../../assets/Images/PortfolioImages/ytthumbnail3.jpg";
 // import Ytthumbnail4 from "../../assets/Images/PortfolioImages/ytthumbnail4.jpg";
@@ -58,7 +58,7 @@ import Standay14 from "../../assets/Images/PortfolioImages/Standay14.jpg";
 
 const portfolioData = [
   // YouTube Thumbnails
-  { id: 1, title: "YouTube Thumbnail 1", category: "YT Thumbnail", image: Ytthumbnail1 },
+  // { id: 1, title: "YouTube Thumbnail 1", category: "YT Thumbnail", image: Ytthumbnail1 },
   { id: 2, title: "YouTube Thumbnail 2", category: "YT Thumbnail", image: Ytthumbnail2 },
   { id: 3, title: "YouTube Thumbnail 3", category: "YT Thumbnail", image: Ytthumbnail3 },
   { id: 4, title: "YouTube Thumbnail 5", category: "YT Thumbnail", image: Ytthumbnail5 },
