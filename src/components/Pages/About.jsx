@@ -1,97 +1,123 @@
 import React from "react";
-import { FaBriefcase, FaCheckCircle, FaPalette, FaCamera } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import bgImage from "../../assets/Images/12.jpg";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"; // Import social media icons
+import profileImage from "../../assets/Images/12.jpg"; // Replace with your image path
 
 const About = () => {
-  const navigate = useNavigate(); // Initialize navigate
-
   return (
-    <div className="h-screen overflow-auto text-white py-3 px-8 lg:px-16">
-      {/* About Header */}
-      <h1 className="text-4xl lg:text-5xl font-bold text-center mb-6">About Me</h1>
-      <p className="text-gray-400 text-center mb-10 px-6 lg:px-32">
-        I am a passionate and dedicated graphic designer with a keen eye for detail and a creative approach to problem-solving.
-      </p>
-
-      {/* About Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
-        {/* Image Section */}
-        <div className="relative mx-auto lg:mx-0">
-          <div className="w-60 h-60 lg:w-52 lg:h-52 bg-yellow-500 absolute top-5 left-5 -z-10"></div>
+    <div className="h-screen flex flex-col items-center  px-4 overflow-y-auto">
+      {/* Header Section */}
+      <div className="w-1/2 max-w-4xl bg-[#2a2a2a] p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-6 mt-10">
+        {/* Image */}
+        <div className="flex-shrink-0">
           <img
-            src={bgImage}
+            src={profileImage}
             alt="Profile"
-            className="relative z-10 rounded-lg shadow-lg"
+            className="w-36 h-36 rounded-full object-cover" // Adjusted the image size to make it larger
           />
+          {/* Social Media Icons */}
+          <div className="flex mt-4 gap-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-blue-600 hover:text-blue-700 text-2xl" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-blue-400 hover:text-blue-500 text-2xl" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-pink-500 hover:text-pink-600 text-2xl" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-blue-700 hover:text-blue-800 text-2xl" />
+            </a>
+          </div>
         </div>
+        <div className="">
+          <h1 className="text-2xl md:text-3xl font-bold">Muhammad Ahtisham</h1>
+          <p className="text-sm md:text-base text-gray-400">Graphic Designer</p>
+          <div className="mt-4 flex gap-4">
+            <button className="bg-green-500 hover:bg-green-600 text-black font-semibold px-4 py-2 rounded">
+              Download CV
+            </button>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">
+              Contact
+            </button>
+          </div>
 
-        {/* Text Section */}
-        <div>
-          <h2 className="text-yellow-400 text-3xl lg:text-4xl font-bold mb-2">Muhammad Ahtisham</h2>
-          <h3 className="text-lg text-gray-300 font-semibold mb-4">Graphic Designer</h3>
-          <p className="text-gray-400 mb-6 leading-relaxed">
-            With over 5 years of experience in graphic design, I specialize in creating visually compelling designs that align with client goals. I enjoy bringing concepts to life and making them stand out in a competitive market.
-          </p>
-          <div className="flex gap-4">
-            <button className="bg-yellow-500 text-gray-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-600 transition duration-300">
-              Download Portfolio
-            </button>
-            <button
-              className="border border-yellow-500 px-6 py-2 rounded-full font-bold text-yellow-400 hover:bg-yellow-500 hover:text-gray-900 transition duration-300"
-              onClick={() => navigate("/contact")} // Navigate to the contact page
-            >
-              Hire Me
-            </button>
+          <div className="mt-4">
+            <p className="text-sm">
+              <span className="font-semibold">Address:</span> Chak No 11/50MB Jauharabad
+            </p>
+            <p className="text-sm">
+              <span className="font-semibold">Email:</span> shamiahtisham909@gmail.com
+            </p>
+            <p className="text-sm">
+              <span className="font-semibold">Phone:</span> +92305-7256494
+            </p>
+            <p className="text-sm">
+              <span className="font-semibold">Freelance:</span> <span className="text-green-400">Available</span>
+            </p>
           </div>
         </div>
       </div>
 
-      {/* My Journey and My Interests */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* My Journey */}
-        <div>
-          <h3 className="text-yellow-400 text-2xl font-semibold mb-6">My Journey</h3>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-4">
-              <FaBriefcase className="text-yellow-400 text-2xl" />
-              <div>
-                <h4 className="text-lg font-semibold">5 Years</h4>
-                <p className="text-gray-400 text-sm">Graphic Design Experience</p>
-              </div>
-            </li>
-            <li className="flex items-center gap-4">
-              <FaCheckCircle className="text-yellow-400 text-2xl" />
-              <div>
-                <h4 className="text-lg font-semibold">300+ Projects</h4>
-                <p className="text-gray-400 text-sm">Completed Successfully</p>
-              </div>
-            </li>
-            <li className="flex items-center gap-4">
-              <FaBriefcase className="text-yellow-400 text-2xl" />
-              <div>
-                <h4 className="text-lg font-semibold">Freelance</h4>
-                <p className="text-gray-400 text-sm">Available</p>
-              </div>
-            </li>
-          </ul>
+      {/* Skills Section */}
+      <div className="w-full max-w-4xl mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Technical Skills */}
+        <div className="bg-[#2a2a2a] p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold mb-4">Technical Skills</h2>
+          <div className="space-y-4">
+            {[{ skill: "Adobe Photoshop", percentage: 80 }, { skill: "Illustrator", percentage: 70 }, { skill: "Social Media Management", percentage: 75 }].map(
+              ({ skill, percentage }, index) => (
+                <div key={index}>
+                  <p className="text-sm">{skill}</p>
+                  <div className="w-full bg-gray-600 h-2 rounded mt-1">
+                    <div className={`h-2 bg-green-500 rounded`} style={{ width: `${percentage}%` }}></div>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
         </div>
 
-        {/* My Interests */}
-        <div>
-          <h3 className="text-yellow-400 text-2xl font-semibold mb-6">My Interests</h3>
-          <div className="grid grid-cols-2 gap-6">
-            <div className="flex items-center gap-3">
-              <FaPalette className="text-yellow-400 text-2xl" />
-              <span className="text-lg font-semibold">Illustrations</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <FaCamera className="text-yellow-400 text-2xl" />
-              <span className="text-lg font-semibold">Photography</span>
-            </div>
+        {/* Soft Skills */}
+        <div className="bg-[#2a2a2a] p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold mb-4">Soft Skills</h2>
+          <div className="space-y-4">
+            {[{ skill: "Communication", percentage: 85 }, { skill: "Language", percentage: 75 }, { skill: "General Knowledge", percentage: 65 }].map(
+              ({ skill, percentage }, index) => (
+                <div key={index}>
+                  <p className="text-sm">{skill}</p>
+                  <div className="w-full bg-gray-600 h-2 rounded mt-1">
+                    <div className={`h-2 bg-blue-500 rounded`} style={{ width: `${percentage}%` }}></div>
+                  </div>
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
+
+      {/* Education Section */}
+      <div className="w-full max-w-4xl bg-[#2a2a2a] p-6 rounded-lg shadow-md mt-10">
+        <h2 className="text-xl font-semibold mb-4">Education</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>B.S.C.C (Virtual University) - Ongoing</li>
+          <li>I.C.S (B.I.S.E Sargodha) - 2020</li>
+          <li>Matriculation (B.I.S.E Sargodha) - 2018</li>
+        </ul>
+      </div>
+
+      {/* Experience Section */}
+      <div className="w-full max-w-4xl bg-[#2a2a2a] p-6 rounded-lg shadow-md mt-6">
+        <h2 className="text-xl font-semibold mb-4">Experience</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>1 Year as Computer Operator & Graphic Designer at Career Group of Colleges</li>
+          <li>3 Months as Computer Operator & Graphic Designer at Forces School & College System</li>
+          <li>3 Months as Digital Trainee Machine Operator at Masood Textile Mills</li>
+          <li>1 Year as Social Media Marketer & Graphic Designer at Insaf Estate Builder and Town Planners</li>
+        </ul>
+      </div>
+
+
     </div>
   );
 };
