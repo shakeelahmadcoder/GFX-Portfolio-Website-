@@ -17,16 +17,16 @@ const About = () => {
           {/* Social Media Icons */}
           <div className="flex mt-4 gap-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-600 hover:text-blue-700 text-2xl" />
+              <FaFacebook className="text-white-600 hover:text-blue-700 text-2xl" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-blue-400 hover:text-blue-500 text-2xl" />
+              <FaTwitter className="text-white-400 hover:text-blue-500 text-2xl" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-pink-500 hover:text-pink-600 text-2xl" />
+              <FaInstagram className="text-white-500 hover:text-pink-600 text-2xl" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-700 hover:text-blue-800 text-2xl" />
+              <FaLinkedin className="text-white-700 hover:text-blue-800 text-2xl" />
             </a>
           </div>
         </div>
@@ -100,7 +100,7 @@ const About = () => {
       <div className="w-full max-w-4xl bg-[#2a2a2a] p-6 rounded-lg shadow-md mt-10">
         <h2 className="text-xl font-semibold mb-4">Education</h2>
         <ul className="list-disc pl-6 space-y-2">
-          <li>B.S.C.C (Virtual University) - Ongoing</li>
+          <li>B.S.S.C (Virtual University) - Ongoing</li>
           <li>I.C.S (B.I.S.E Sargodha) - 2020</li>
           <li>Matriculation (B.I.S.E Sargodha) - 2018</li>
         </ul>
