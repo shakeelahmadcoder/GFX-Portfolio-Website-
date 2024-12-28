@@ -6,7 +6,7 @@ import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Portfolio from './components/Pages/Portfolio';
 import Testimonials from './components/Pages/Testimonials';
-import Resume from './components/Pages/Resume';
+// import Resume from './components/Pages/Resume';
 import Services from './components/Pages/Services';
 
 const App = () => {
@@ -41,7 +41,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
+            {/* <Route path="/resume" element={<Resume />} /> */}
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/testimonials" element={<Testimonials />} />
