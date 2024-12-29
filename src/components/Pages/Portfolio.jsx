@@ -89,9 +89,6 @@ import SocialMediaPost79 from "../../assets/Images/PortfolioImages/79-min.jpg"
 import SocialMediaPost80 from "../../assets/Images/PortfolioImages/80-min.jpg"
 import SocialMediaPost81 from "../../assets/Images/PortfolioImages/81-min.jpg"
 import SocialMediaPost82 from "../../assets/Images/PortfolioImages/82-min.jpg"
-import FacebookPost1 from "../../assets/Images/PortfolioImages/Facebook1.jpg"
-import FacebookPost2 from "../../assets/Images/PortfolioImages/Facebook2.jpg"
-import FacebookPost3 from "../../assets/Images/PortfolioImages/Facebook3.jpg"
 import Fiverr1 from "../../assets/Images/PortfolioImages/Fiverr1.jpg"
 import Fiverr2 from "../../assets/Images/PortfolioImages/Fiverr2.jpg"
 import Fiverr3 from "../../assets/Images/PortfolioImages/Fiverr3.jpg"
@@ -184,6 +181,9 @@ import VisitingCard3 from "../../assets/Images/PortfolioImages/v3.jpg"
 import VisitingCard4 from "../../assets/Images/PortfolioImages/v4.jpg"
 import VisitingCard5 from "../../assets/Images/PortfolioImages/v5.jpg"
 import VisitingCard6 from "../../assets/Images/PortfolioImages/v6.jpg"
+import FacebookPost1 from "../../assets/Images/PortfolioImages/Facebook1.jpg"
+import FacebookPost2 from "../../assets/Images/PortfolioImages/Facebook2.jpg"
+import FacebookPost3 from "../../assets/Images/PortfolioImages/Facebook3.jpg"
 
 import { useState } from 'react'
 
@@ -363,13 +363,16 @@ const Portfolio = () => {
     { id: 173, image: VisitingCard4, category: 'Visiting Card' },
     { id: 174, image: VisitingCard5, category: 'Visiting Card' },
     { id: 175, image: VisitingCard6, category: 'Visiting Card' },
+    { id: 182, image: FacebookPost1, category: 'Facebook Cover' },
+    { id: 183, image: FacebookPost2, category: 'Facebook Cover' },
+    { id: 184, image: FacebookPost3, category: 'Facebook Cover' },
     
     
 ];
 
 
   const categories = [
-    'All', 'Billboard', 'Social Media Post', 'Fiverr', 'Logo Design', 'Package Design', 'Standee', 'Youtube Thumbnail', 'Visiting Card'
+    'All', 'Billboard', 'Social Media Post', 'Fiverr', 'Logo Design', 'Package Design', 'Standee', 'Facebook Cover', 'Youtube Thumbnail', 'Visiting Card'
   ];
 
   const filteredData = filter === 'All' ? data : data.filter(item => item.category === filter);
@@ -397,7 +400,7 @@ const Portfolio = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredData.map(item => (
-            <div key={item.id} className="portfolio-item border rounded-lg overflow-hidden">
+            <div key={item.id} className="portfolio-item border  overflow-hidden">
               <img src={item.image} alt={item.category} className="w-full h-64 object-cover" />
               <div className="p-4">
                 <p className="text-center font-medium">{item.category}</p>

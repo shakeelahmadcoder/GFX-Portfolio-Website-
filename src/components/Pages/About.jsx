@@ -31,29 +31,29 @@ const About = () => {
           </div>
         </div>
         <div className="">
-          <h1 className="text-2xl md:text-3xl font-bold">Muhammad Ahtisham</h1>
-          <p className="text-sm md:text-base text-gray-400">Graphic Designer</p>
+          <h1 className="text-2xl md:text-3xl font-bold   text-yellow-500 tracking-tight font-oswald">MUHAMMAD AHTISHAM</h1>
+          <p className="text-sm md:text-base text-gray-400">Graphic Designer and Social Media Manger</p>
           <div className="mt-4 flex gap-4">
-            <button className="bg-green-500 hover:bg-green-600 text-black font-semibold px-4 py-2 rounded">
+            <button className="bg-yellow-500 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded">
               Download CV
             </button>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">
+            <button className="bg-white text-black font-semibold px-4 py-2 rounded">
               Contact
             </button>
           </div>
 
           <div className="mt-4">
             <p className="text-sm">
-              <span className="font-semibold">Address:</span> Chak No 11/50MB Jauharabad
+              <span className="font-semibold">Address:</span> Jauharabd District khushab
             </p>
             <p className="text-sm">
               <span className="font-semibold">Email:</span> shamiahtisham909@gmail.com
             </p>
             <p className="text-sm">
-              <span className="font-semibold">Phone:</span> +92305-7256494
+              <span className="font-semibold">Phone:</span> 03219350989
             </p>
             <p className="text-sm">
-              <span className="font-semibold">Freelance:</span> <span className="text-green-400">Available</span>
+              <span className="font-semibold">Freelance:</span> <span className="text-yellow-500">Available</span>
             </p>
           </div>
         </div>
@@ -70,7 +70,7 @@ const About = () => {
                 <div key={index}>
                   <p className="text-sm">{skill}</p>
                   <div className="w-full bg-gray-600 h-2 rounded mt-1">
-                    <div className={`h-2 bg-green-500 rounded`} style={{ width: `${percentage}%` }}></div>
+                    <div className={`h-2 bg-yellow-500 rounded`} style={{ width: `${percentage}%` }}></div>
                   </div>
                 </div>
               )
@@ -87,7 +87,7 @@ const About = () => {
                 <div key={index}>
                   <p className="text-sm">{skill}</p>
                   <div className="w-full bg-gray-600 h-2 rounded mt-1">
-                    <div className={`h-2 bg-blue-500 rounded`} style={{ width: `${percentage}%` }}></div>
+                    <div className={`h-2 bg-white rounded`} style={{ width: `${percentage}%` }}></div>
                   </div>
                 </div>
               )
@@ -100,7 +100,7 @@ const About = () => {
       <div className="w-full max-w-4xl bg-[#2a2a2a] p-6 rounded-lg shadow-md mt-10">
         <h2 className="text-xl font-semibold mb-4">Education</h2>
         <ul className="list-disc pl-6 space-y-2">
-          <li>B.S.S.C (Virtual University) - Ongoing</li>
+          <li>B.S.C.S (Virtual University) - Ongoing</li>
           <li>I.C.S (B.I.S.E Sargodha) - 2020</li>
           <li>Matriculation (B.I.S.E Sargodha) - 2018</li>
         </ul>
@@ -114,6 +114,7 @@ const About = () => {
           <li>3 Months as Computer Operator & Graphic Designer at Forces School & College System</li>
           <li>3 Months as Digital Trainee Machine Operator at Masood Textile Mills</li>
           <li>1 Year as Social Media Marketer & Graphic Designer at Insaf Estate Builder and Town Planners</li>
+          <li>Senior Graphic Designer at City Flex Jauharabad</li>
         </ul>
       </div>
 

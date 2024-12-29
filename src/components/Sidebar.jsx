@@ -22,10 +22,10 @@ const Sidebar = () => {
             <FiUser />
             <Link  to="/about">About Me</Link>
           </li>
-          <li className="flex items-center gap-2">
+          {/* <li className="flex items-center gap-2">
             <FiFileText />
             <Link  to="/resume">Resume</Link>
-          </li>
+          </li> */}
           <li className="flex items-center gap-2">
             <FiBriefcase />
             <Link  to="/services">Services</Link>
