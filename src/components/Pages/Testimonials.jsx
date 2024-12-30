@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import technology from "../../assets/Images/technology.jpeg"
 import quran from "../../assets/Images/quran.jfif"
 import fehmida from "../../assets/Images/Fehmida.jpeg"
-import seo from "../../assets/Images/SEO.jpeg"
+import click from "../../assets/Images/click.jfif"
 import college from "../../assets/Images/college.jpeg"
 import complex from "../../assets/Images/complex.jpeg"
+import ceo from "../../assets/Images/SEO.jpeg"
+import kinza from "../../assets/Images/kinzay.jpeg"
 const testimonials = [
   {
     id: 1,
@@ -17,7 +19,7 @@ const testimonials = [
     id: 2,
     name: "Click Solutions CEO",
     text: "I recently worked with a highly skilled and creative graphic designer, and I am thoroughly impressed with their work. They are not only an expert in their field but also bring a unique artistic flair to every project. Their designs were exactly what I needed—professional, eye-catching, and perfectly tailored to my requirements. I highly recommend their services to anyone looking for top-notch graphic design work!",
-    image: technology,
+    image: click,
     rating: 5,
   },
   {
@@ -46,6 +48,20 @@ const testimonials = [
     name: "Ameer Complex",
     text: "Working with Ahtisham  was an absolute pleasure! They truly understood my vision and delivered designs that exceeded my expectations. The creativity, attention to detail, and professionalism they brought to the project were exceptional. Every step of the process was smooth, and they were always open to feedback and quick with revisions. I highly recommend their graphic design services to anyone looking for high-quality and impactful designs. Thank you for bringing my ideas to life!",
     image: complex,
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: "Hamza Packages CEO",
+    text: "Muhammad Ahtisham is an exceptionally talented graphic designer who transformed our packaging and promotional materials into visually stunning creations. His creativity, attention to detail, and deep understanding of branding exceeded our expectations. He’s a true professional, and I highly recommend his services to anyone seeking impactful designs.",
+    image: ceo,
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: "Kinza Irshad",
+    text: "Collaborating with Ahtisham was a fantastic experience! They listened carefully to my ideas and turned them into designs that were even better than I had imagined. Their unique creativity and dedication to perfection really stood out. The entire process was seamless, and they were incredibly responsive to my suggestions, making adjustments swiftly and effectively. I’m beyond impressed with the results and would highly recommend their design expertise to anyone in need of outstanding visuals. Thank you for your exceptional work and commitment!",
+    image: kinza,
     rating: 5,
   },
 ];

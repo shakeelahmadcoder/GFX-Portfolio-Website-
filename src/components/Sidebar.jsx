@@ -47,15 +47,24 @@ const Sidebar = () => {
       </nav>
 
       {/* Sidebar Footer */}
-      <footer className="mt-auto ">
-        <div className="flex justify-center gap-3 cursor-pointer mb-3">
-          <FaFacebook />
-          <FaLinkedin />
-          <FaTwitter />
-          <FaInstagram />
-        </div>
-        <p className="text-sm text-center">&copy; Shakeel Ahmed</p>
-      </footer>
+      <footer className="mt-auto">
+  <div className="flex justify-center gap-3 cursor-pointer mb-3">
+    <a href="https://www.facebook.com/share/1DEGVocgVH/" target="_blank" rel="noopener noreferrer">
+      <FaFacebook />
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <FaTwitter />
+    </a>
+    <a href="https://www.instagram.com/muhammad_ahtisham_1/profilecard/?igsh=MTdlNDY5MXd5ZmhqaQ==" target="_blank" rel="noopener noreferrer">
+      <FaInstagram />
+    </a>
+  </div>
+  <p className="text-sm text-center">&copy; Muhammad Ahtisham</p>
+</footer>
+
     </div>
   );
 };

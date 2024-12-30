@@ -16,19 +16,20 @@ const About = () => {
           />
           {/* Social Media Icons */}
           <div className="flex mt-4 gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-white-600 hover:text-blue-700 text-2xl" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-white-400 hover:text-blue-500 text-2xl" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-white-500 hover:text-pink-600 text-2xl" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-white-700 hover:text-blue-800 text-2xl" />
-            </a>
-          </div>
+  <a href="https://www.facebook.com/share/1DEGVocgVH/" target="_blank" rel="noopener noreferrer">
+    <FaFacebook className="text-white-600 hover:text-blue-700 text-2xl" />
+  </a>
+  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+    <FaTwitter className="text-white-400 hover:text-blue-500 text-2xl" />
+  </a>
+  <a href="https://www.instagram.com/muhammad_ahtisham_1/profilecard/?igsh=MTdlNDY5MXd5ZmhqaQ==" target="_blank" rel="noopener noreferrer">
+    <FaInstagram className="text-white-500 hover:text-pink-600 text-2xl" />
+  </a>
+  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin className="text-white-700 hover:text-blue-800 text-2xl" />
+  </a>
+</div>
+
         </div>
         <div className="">
           <h1 className="text-2xl md:text-3xl font-bold   text-yellow-500 tracking-tight font-oswald">MUHAMMAD AHTISHAM</h1>

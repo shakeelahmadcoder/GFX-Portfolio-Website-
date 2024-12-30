@@ -12,26 +12,26 @@ const Contact = () => {
       {
         icon: <FaWhatsapp className="text-green-500 text-6xl" />,
         title: "WhatsApp Us",
-        link: "https://wa.me/2013544443",
+        link: "https://wa.me/923219350989",
         buttonText: "Message on WhatsApp",
       },
       {
         icon: <FaPhoneAlt className="text-yellow-400 text-6xl" />,
         title: "Call Us",
-        link: "tel:2013544443",
+        link: "tel:+923219350989",
         buttonText: "Call Now",
       },
       {
         icon: <FaMapMarkerAlt className="text-red-500 text-6xl" />,
         title: "Visit Us",
-        details: ["Jauharabd District khushab"],
+        details: ["Jauharabd District Khushab"],
       },
     ],
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gradient-to-b  text-white p-5">
-      <div className="w-full max-w-5xl  bg-opacity-60 p-10 rounded-xl shadow-2xl">
+    <div className="h-screen flex items-center justify-center bg-gradient-to-b text-white p-5">
+      <div className="w-full max-w-5xl bg-opacity-60 p-10 rounded-xl shadow-2xl">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-6xl font-extrabold text-yellow-300 mb-6">
