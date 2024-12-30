@@ -1,37 +1,51 @@
 import React, { useState } from "react";
-
-// Testimonials Data
+import technology from "../../assets/Images/technology.jpeg"
+import quran from "../../assets/Images/quran.jfif"
+import fehmida from "../../assets/Images/Fehmida.jpeg"
+import seo from "../../assets/Images/SEO.jpeg"
+import college from "../../assets/Images/college.jpeg"
+import complex from "../../assets/Images/complex.jpeg"
 const testimonials = [
   {
     id: 1,
-    name: "Melvin G. Byrd",
-    company: "Herman's World",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Shape and Shade by Fehmida",
+    text: "I am working from 6 months and I had never seen the skills which you have Ma Sha Allah. You made all my posts and videos beautiful, which I really want. In our whole city, never ever seen is your compatible person. Allah bless you more success, Ameen.",
+    image: fehmida,
     rating: 5,
   },
   {
     id: 2,
-    name: "S. Williams",
-    company: "Old America Stores",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "Click Solutions CEO",
+    text: "I recently worked with a highly skilled and creative graphic designer, and I am thoroughly impressed with their work. They are not only an expert in their field but also bring a unique artistic flair to every project. Their designs were exactly what I needed—professional, eye-catching, and perfectly tailored to my requirements. I highly recommend their services to anyone looking for top-notch graphic design work!",
+    image: technology,
     rating: 5,
   },
   {
     id: 3,
-    name: "Melvin G. Byrd",
-    company: "Herman's World",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+    name: "Quran Academy",
+    text: "I am truly impressed with the ad!!! The content is clear, engaging, and perfectly aligned with its purpose. The visuals are eye-catching, and the call-to-action is very effective. Thank you for putting in such effort and creativity—Great job!!!",
+    image: quran,
     rating: 5,
   },
   {
     id: 4,
-    name: "S. Williams",
-    company: "Old America Stores",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: "CHAPS Group of Colleges",
+    text: "Muhammad Ahtisham has been an invaluable asset to the CHAPS Group of Colleges. Their creativity and professionalism shine through in every promotional ad and video they produce. Each project reflects a deep understanding of our brand, effectively capturing the essence of our institution. Their attention to detail, innovative designs, and timely delivery consistently exceed expectations. We highly recommend Muhammad Ahtisham for any creative endeavor!",
+    image: college,
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: "CEO Techlogics",
+    text: "I was impressed with Ahtisham's professionalism and enthusiasm throughout the project. He was a pleasure to communicate with and provided valuable feedback at every stage. He was also very understanding of the creative process and patient with revisions. I would definitely work with him again.",
+    image: technology,
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Ameer Complex",
+    text: "Working with Ahtisham  was an absolute pleasure! They truly understood my vision and delivered designs that exceeded my expectations. The creativity, attention to detail, and professionalism they brought to the project were exceptional. Every step of the process was smooth, and they were always open to feedback and quick with revisions. I highly recommend their graphic design services to anyone looking for high-quality and impactful designs. Thank you for bringing my ideas to life!",
+    image: complex,
     rating: 5,
   },
 ];
@@ -58,13 +72,11 @@ export default function Testimonials() {
   };
 
   return (
-    <div className="h-full overflow-y-auto p-6">
+    <div className="h-screen overflow-y-auto p-6">
       {/* Header */}
       <h2 className="text-4xl font-bold text-center mb-6">Testimonials</h2>
       <p className="text-center text-gray-400 mb-8 px-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-        suspendisse ultrices.
+        See what people are saying about our services!
       </p>
 
       {/* Testimonials Cards */}
@@ -81,8 +93,9 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full object-cover mr-4"
               />
               <div>
-                <h3 className="font-semibold text-lg text-white">{testimonial.name}</h3>
-                <p className="text-gray-400 text-sm">{testimonial.company}</p>
+                <h3 className="font-semibold text-lg text-white">
+                  {testimonial.name}
+                </h3>
               </div>
             </div>
             <p className="text-gray-300 mb-4">{testimonial.text}</p>

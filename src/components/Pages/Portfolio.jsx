@@ -274,28 +274,28 @@ const Portfolio = () => {
     { id: 80, image: SocialMediaPost73, category: 'Social Media Post' },
     { id: 81, image: SocialMediaPost74, category: 'Social Media Post' },
     { id: 82, image: SocialMediaPost75, category: 'Social Media Post' },
-    { id: 92, image: Fiverr1, category: 'Fiverr' },
-    { id: 93, image: Fiverr2, category: 'Fiverr' },
-    { id: 94, image: Fiverr3, category: 'Fiverr' },
-    { id: 95, image: Fiverr4, category: 'Fiverr' },
-    { id: 96, image: Fiverr5, category: 'Fiverr' },
-    { id: 97, image: Fiverr6, category: 'Fiverr' },
-    { id: 98, image: Fiverr7, category: 'Fiverr' },
-    { id: 99, image: Fiverr8, category: 'Fiverr' },
-    { id: 100, image: Fiverr9, category: 'Fiverr' },
-    { id: 101, image: Fiverr10, category: 'Fiverr' },
-    { id: 102, image: Fiverr11, category: 'Fiverr' },
-    { id: 103, image: Fiverr12, category: 'Fiverr' },
-    { id: 104, image: Fiverr13, category: 'Fiverr' },
-    { id: 105, image: Fiverr14, category: 'Fiverr' },
-    { id: 106, image: Fiverr15, category: 'Fiverr' },
-    { id: 107, image: Fiverr16, category: 'Fiverr' },
-    { id: 108, image: Fiverr17, category: 'Fiverr' },
-    { id: 109, image: Fiverr18, category: 'Fiverr' },
-    { id: 110, image: Fiverr19, category: 'Fiverr' },
-    { id: 111, image: Fiverr20, category: 'Fiverr' },
-    { id: 112, image: Fiverr21, category: 'Fiverr' },
-    { id: 113, image: Fiverr22, category: 'Fiverr' },
+    { id: 92, image: Fiverr1, category: 'Fiverr Gig Thumbnail' },
+    { id: 93, image: Fiverr2, category: 'Fiverr Gig Thumbnail' },
+    { id: 94, image: Fiverr3, category: 'Fiverr Gig Thumbnail' },
+    { id: 95, image: Fiverr4, category: 'Fiverr Gig Thumbnail' },
+    { id: 96, image: Fiverr5, category: 'Fiverr Gig Thumbnail' },
+    { id: 97, image: Fiverr6, category: 'Fiverr Gig Thumbnail' },
+    { id: 98, image: Fiverr7, category: 'Fiverr Gig Thumbnail' },
+    { id: 99, image: Fiverr8, category: 'Fiverr Gig Thumbnail' },
+    { id: 100, image: Fiverr9, category: 'Fiverr Gig Thumbnail' },
+    { id: 101, image: Fiverr10, category: 'Fiverr Gig Thumbnail' },
+    { id: 102, image: Fiverr11, category: 'Fiverr Gig Thumbnail' },
+    { id: 103, image: Fiverr12, category: 'Fiverr Gig Thumbnail' },
+    { id: 104, image: Fiverr13, category: 'Fiverr Gig Thumbnail' },
+    { id: 105, image: Fiverr14, category: 'Fiverr Gig Thumbnail' },
+    { id: 106, image: Fiverr15, category: 'Fiverr Gig Thumbnail' },
+    { id: 107, image: Fiverr16, category: 'Fiverr Gig Thumbnail' },
+    { id: 108, image: Fiverr17, category: 'Fiverr Gig Thumbnail' },
+    { id: 109, image: Fiverr18, category: 'Fiverr Gig Thumbnail' },
+    { id: 110, image: Fiverr19, category: 'Fiverr Gig Thumbnail' },
+    { id: 111, image: Fiverr20, category: 'Fiverr Gig Thumbnail' },
+    { id: 112, image: Fiverr21, category: 'Fiverr Gig Thumbnail' },
+    { id: 113, image: Fiverr22, category: 'Fiverr Gig Thumbnail' },
     { id: 114, image: Logo1, category: 'Logo Design' },
     { id: 115, image: Logo2, category: 'Logo Design' },
     { id: 116, image: Logo3, category: 'Logo Design' },
@@ -372,7 +372,7 @@ const Portfolio = () => {
 
 
   const categories = [
-    'All', 'Billboard', 'Social Media Post', 'Fiverr', 'Logo Design', 'Package Design', 'Standee', 'Facebook Cover', 'Youtube Thumbnail', 'Visiting Card'
+    'All', 'Billboard', 'Social Media Post', 'Fiverr Gig Thumbnail', 'Logo Design', 'Package Design', 'Standee', 'Facebook Cover', 'Youtube Thumbnail', 'Visiting Card'
   ];
 
   const filteredData = filter === 'All' ? data : data.filter(item => item.category === filter);
@@ -400,8 +400,8 @@ const Portfolio = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {filteredData.map(item => (
-            <div key={item.id} className="portfolio-item border  overflow-hidden">
-              <img src={item.image} alt={item.category} className="w-full h-64 object-cover" />
+            <div key={item.id} className="portfolio-item   overflow-hidden">
+              <img src={item.image} alt={item.category} className="w-full  object-cover" />
               <div className="p-4">
                 <p className="text-center font-medium">{item.category}</p>
               </div>
