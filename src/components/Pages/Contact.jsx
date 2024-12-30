@@ -24,7 +24,7 @@ const Contact = () => {
       {
         icon: <FaMapMarkerAlt className="text-red-500 text-6xl" />,
         title: "Visit Us",
-        details: ["474 Central Road", "New York, NY"],
+        details: ["Jauharabd District khushab"],
       },
     ],
   };

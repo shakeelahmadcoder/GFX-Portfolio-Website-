@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "CEO Techlogics",
+    name: "Techlogics",
     text: "I was impressed with Ahtisham's professionalism and enthusiasm throughout the project. He was a pleasure to communicate with and provided valuable feedback at every stage. He was also very understanding of the creative process and patient with revisions. I would definitely work with him again.",
     image: technology,
     rating: 5,
