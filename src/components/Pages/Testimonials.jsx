@@ -45,7 +45,7 @@ const testimonials = [
   },
   {
     id: 6,
-    name: "Ameer Complex",
+    name: "Ameer Medical Complex",
     text: "Working with Ahtisham  was an absolute pleasure! They truly understood my vision and delivered designs that exceeded my expectations. The creativity, attention to detail, and professionalism they brought to the project were exceptional. Every step of the process was smooth, and they were always open to feedback and quick with revisions. I highly recommend their graphic design services to anyone looking for high-quality and impactful designs. Thank you for bringing my ideas to life!",
     image: complex,
     rating: 5,

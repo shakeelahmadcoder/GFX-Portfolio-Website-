@@ -192,13 +192,6 @@ const Portfolio = () => {
   const [filter, setFilter] = useState('All');
 
   const data = [
-    { id: 1, image: Bilboard1, category: 'Billboard' },
-    { id: 2, image: Bilboard2, category: 'Billboard' },
-    { id: 3, image: Bilboard3, category: 'Billboard' },
-    { id: 4, image: Bilboard4, category: 'Billboard' },
-    { id: 5, image: Bilboard5, category: 'Billboard' },
-    { id: 6, image: Bilboard6, category: 'Billboard' },
-    { id: 7, image: Bilboard7, category: 'Billboard' },
     { id: 8, image: SocialMediaPost1, category: 'Social Media Post' },
     { id: 9, image: SocialMediaPost2, category: 'Social Media Post' },
     { id: 10, image: SocialMediaPost3, category: 'Social Media Post' },
@@ -274,6 +267,14 @@ const Portfolio = () => {
     { id: 80, image: SocialMediaPost73, category: 'Social Media Post' },
     { id: 81, image: SocialMediaPost74, category: 'Social Media Post' },
     { id: 82, image: SocialMediaPost75, category: 'Social Media Post' },
+    { id: 1, image: Bilboard1, category: 'Billboard' },
+    { id: 2, image: Bilboard2, category: 'Billboard' },
+    { id: 3, image: Bilboard3, category: 'Billboard' },
+    { id: 4, image: Bilboard4, category: 'Billboard' },
+    { id: 5, image: Bilboard5, category: 'Billboard' },
+    { id: 6, image: Bilboard6, category: 'Billboard' },
+    { id: 7, image: Bilboard7, category: 'Billboard' },
+    
     { id: 92, image: Fiverr1, category: 'Fiverr Gig Thumbnail' },
     { id: 93, image: Fiverr2, category: 'Fiverr Gig Thumbnail' },
     { id: 94, image: Fiverr3, category: 'Fiverr Gig Thumbnail' },
@@ -398,13 +399,11 @@ const Portfolio = () => {
         </div>
   
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
           {filteredData.map(item => (
             <div key={item.id} className="portfolio-item   overflow-hidden">
-              <img src={item.image} alt={item.category} className="w-full  object-cover" />
-              <div className="p-4">
-                <p className="text-center font-medium">{item.category}</p>
-              </div>
+              <img  src={item.image} alt={item.category} className="w-full  object-cover" />
+              
             </div>
           ))}
         </div>
