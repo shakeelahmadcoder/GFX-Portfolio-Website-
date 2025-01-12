@@ -402,7 +402,7 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
           {filteredData.map(item => (
             <div key={item.id} className="portfolio-item   overflow-hidden">
-              <img  src={item.image} alt={item.category} className="w-full  object-cover" />
+              <img height="300px" width="300px"  src={item.image} loading='lazy' alt={item.category} className="w-full  object-cover" />
               
             </div>
           ))}
