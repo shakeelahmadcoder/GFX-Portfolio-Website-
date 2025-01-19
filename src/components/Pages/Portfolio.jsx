@@ -185,11 +185,11 @@ import FacebookPost1 from "../../assets/Images/PortfolioImages/Facebook1.jpg"
 import FacebookPost2 from "../../assets/Images/PortfolioImages/Facebook2.jpg"
 import FacebookPost3 from "../../assets/Images/PortfolioImages/Facebook3.jpg"
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Portfolio = () => {
-  const [filter, setFilter] = useState('All');
+  
 
   const data = [
     { id: 8, image: SocialMediaPost1, category: 'Social Media Post' },
@@ -372,45 +372,76 @@ const Portfolio = () => {
 ];
 
 
+
   const categories = [
-    'All', 'Billboard', 'Social Media Post', 'Fiverr Gig Thumbnail', 'Logo Design', 'Package Design', 'Standee', 'Facebook Cover', 'Youtube Thumbnail', 'Visiting Card'
+    "Billboard",
+    "Social Media Post",
+    "Fiverr Gig Thumbnail",
+    "Logo Design",
+    "Package Design",
+    "Standee",
+    "Facebook Cover",
+    "Youtube Thumbnail",
+    "Visiting Card",
   ];
 
-  const filteredData = filter === 'All' ? data : data.filter(item => item.category === filter);
+  
+  const [filter, setFilter] = useState("Billboard"); // Default filter set to "Billboard"
+
+  // Filtered data based on the selected category
+  const filteredData = data.filter((item) => item.category === filter);
+
+  useEffect(() => {
+    // Optional: You can use localStorage to persist the filter if needed
+    // localStorage.setItem('portfolioFilter', filter);
+  }, [filter]);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="portfolio-container p-4 h-screen overflow-y-auto">
-        <h1 className="text-2xl font-bold mb-4 text-center">My Portfolio</h1>
-        
+    <div className="min-h-screen flex flex-col bg-[#242424] text-white">
+      <div className="portfolio-container p-6 h-screen overflow-y-auto">
+        <h1 className="text-3xl font-bold mb-8 text-center">My Portfolio</h1>
+
         {/* Filters (Category Navbar) */}
-        <div className="filters mb-6 flex flex-wrap justify-center gap-4">
+        <div className="filters mb-10 flex flex-wrap justify-center gap-4">
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`px-4 py-2 rounded-md transition-all duration-300 ${
-                filter === category ? 'bg-blue-500 text-white' : 'bg-gray-200 text-black'
+              className={`px-5 py-2 text-sm font-medium rounded-md shadow-md transition-all duration-300 ${
+                filter === category
+                  ? "bg-blue-500 text-white"
+                  : "bg-[#444444] text-gray-400 hover:bg-blue-400 hover:text-white"
               }`}
-              onClick={() => setFilter(category)}
+              onClick={() => setFilter(category)} // Set the filter on click
             >
               {category}
             </button>
           ))}
         </div>
-  
+
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
-          {filteredData.map(item => (
-            <div key={item.id} className="portfolio-item   overflow-hidden">
-              <img height="300px" width="300px"  src={item.image} loading='lazy' alt={item.category} className="w-full  object-cover" />
-              
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {filteredData.map((item) => (
+            <div
+              key={item.id}
+              className="portfolio-item overflow-hidden rounded-lg shadow-lg bg-white transition-transform transform hover:scale-105"
+            >
+              <img
+                src={item.image}
+                alt={item.category}
+                loading="lazy"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-semibold text-gray-700">
+                  {item.category}
+                </h3>
+              </div>
             </div>
           ))}
         </div>
       </div>
     </div>
   );
-  
 };
 
 export default Portfolio;

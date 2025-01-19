@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/Images/home.jpg";
+import backgroundImage from "../../assets/Images/home.png";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -7,31 +7,29 @@ const Home = () => {
 
   return (
     <div
-      className="h-screen w-full bg-cover bg-center relative overflow-hidden font-oswald"
+      className="h-screen w-full bg-cover bg-center relative overflow-hidden font-oswald opacity-40"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0  opacity-90"></div>
-
       {/* Content */}
-      <div
-        className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white px-4 pb-16"
-      >
-        <h1 className="text-2xl md:text-4xl font-light mb-2 tracking-tight">
-          HELLO I'M
+      <div className="relative z-10 flex flex-col items-center justify-end h-full text-center text-white px-6 pb-16">
+        <h1 className="text-xl md:text-3xl font-light mb-2 tracking-wider">
+          HELLO, I'M
         </h1>
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold   text-yellow-500 tracking-tight">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-yellow-500 tracking-wider">
           MUHAMMAD AHTISHAM
         </h2>
-        <div className="mt-4 flex gap-4">
+        <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+          I'm a passionate developer dedicated to crafting engaging and impactful digital experiences.
+        </p>
+        <div className="mt-8 flex gap-6">
           <button
-            className="px-6 py-2 text-xl bg-yellow-500 text-black font-semibold rounded hover:bg-yellow-600 transition duration-300"
+            className="px-8 py-3 text-lg md:text-xl bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 hover:scale-105 transition-transform duration-300"
             onClick={() => window.open("https://wa.me/923219350989", "_blank")}
           >
             HIRE ME
           </button>
           <button
-            className="px-6 py-2 text-xl border-2 border-yellow-500 text-white font-semibold rounded hover:bg-yellow-500 hover:text-black transition duration-300"
+            className="px-8 py-3 text-lg md:text-xl border-2 border-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-500 hover:text-black hover:scale-105 transition-transform duration-300"
             onClick={() => navigate("/portfolio")}
           >
             PORTFOLIO
