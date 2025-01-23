@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/Images/home.png";
+import backgroundImage from "../../assets/Images/home.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div
-      className="h-screen w-full bg-cover bg-center relative overflow-hidden font-oswald opacity-40"
+      className="h-screen w-full bg-cover bg-center relative overflow-hidden font-oswald opacity-50"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Content */}
@@ -19,7 +19,7 @@ const Home = () => {
           MUHAMMAD AHTISHAM
         </h2>
         <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
-          I'm a passionate developer dedicated to crafting engaging and impactful digital experiences.
+          I'm a passionate Graphic Designer dedicated to crafting engaging and impactful Designs.
         </p>
         <div className="mt-8 flex gap-6">
           <button

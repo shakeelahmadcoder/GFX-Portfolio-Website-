@@ -374,19 +374,19 @@ const Portfolio = () => {
 
 
   const categories = [
+    "Fiverr Gig Thumbnail",
+    "Package Design",
     "Billboard",
     "Social Media Post",
-    "Fiverr Gig Thumbnail",
-    "Logo Design",
-    "Package Design",
-    "Standee",
-    "Facebook Cover",
     "Youtube Thumbnail",
+    "Facebook Cover",
+    "Logo Design",
+    "Standee",
     "Visiting Card",
   ];
 
   
-  const [filter, setFilter] = useState("Billboard"); // Default filter set to "Billboard"
+  const [filter, setFilter] = useState("Fiverr Gig Thumbnail"); // Default filter set to "Billboard"
 
   // Filtered data based on the selected category
   const filteredData = data.filter((item) => item.category === filter);
@@ -421,6 +421,7 @@ const Portfolio = () => {
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredData.map((item) => (
+
             <div
               key={item.id}
               className="portfolio-item overflow-hidden rounded-lg shadow-lg bg-white transition-transform transform hover:scale-105"
@@ -437,6 +438,7 @@ const Portfolio = () => {
                 </h3>
               </div>
             </div>
+            
           ))}
         </div>
       </div>
